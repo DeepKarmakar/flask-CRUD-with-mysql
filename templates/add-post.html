@@ -4,6 +4,10 @@
 <title>Add post</title>
 {% endblock %}
 
+{% block title %} 
+    <h3>ADD POST</h3>
+{% endblock %}
+
 {% block body %}
 <form action="/api/add-post" method="POST">
     <div class="form-group">
@@ -18,9 +22,6 @@
       <label for="pwd">Description:</label>
       <textarea class="form-control" name="description"></textarea> 
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 {% endblock %}
